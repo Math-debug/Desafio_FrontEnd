@@ -9,12 +9,12 @@ yarn install
 
 ### Compilar para desenvolvimento
 ```
-yarn serve
+yarn run serve
 ```
 
 ### Compilar para produção
 ```
-yarn build
+yarn run build
 ```
 
 ## 🛠️ Tecnologias utilizadas
