@@ -13,7 +13,7 @@
             <td>{{ row.item.id }}</td>
             <td>{{ row.item.name }}</td>
             <td>{{ row.item.description }}</td>
-            <td>{{ row.item.amount }}</td>
+            <td>R$ {{ formatPrice(row.item.amount.toString()) }}</td>
             <td>
               <v-btn class="mx-2" fab small v-b-tooltip.hover title="Editar registro" v-b-modal.modal-edit @click="find(row.item.id)">
                 <v-icon>mdi-pencil</v-icon>
@@ -123,6 +123,12 @@ export default {
         return false
       }
       return true
+    },
+    formatPrice(value) {
+      const val = Number(value.replace(",", "."));
+      if (!val) return '0,00';
+      const valueString = val.toFixed(2).replace(".", ",");
+      return valueString.replace(/\B(?=(\d{3})+(?!\d))/g, ".");
     }
   }
 }
