@@ -1,24 +1,19 @@
-# desafio_front
+# Desafio Front-End
 
-## Project setup
+Desafio Técnico utilizando front-end com Vuejs
+
+## 🔧 Instalação de dependências
 ```
 yarn install
 ```
 
-### Compiles and hot-reloads for development
+### Compilar para desenvolvimento
 ```
 yarn serve
 ```
 
-### Compiles and minifies for production
+### Compilar para produção
 ```
 yarn build
 ```
 
-### Lints and fixes files
-```
-yarn lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
