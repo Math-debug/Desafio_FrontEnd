@@ -17,3 +17,7 @@ yarn serve
 yarn build
 ```
 
+## 🛠️ Tecnologias utilizadas
+
+* Vuetify
+* Bootstrap
